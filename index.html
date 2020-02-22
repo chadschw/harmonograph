@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Harmonograph</title>
+    <script src="index.js"></script>
+</head>
+<body onload="init()">
+
+    <div style="display: flex">
+        <canvas id="canvas" width=800 height=800></canvas>
+        <div>
+            <div>
+                <input id="animate" type="checkbox" checked><label>Animate</label>
+            </div>
+            <div><input id="animateSpeed" type=range min="1" max="100"><label>Animate Speed</label></div>
+
+
+            <div><input id="f1" type="range" min="0" max="100"><label>f1</label></div>
+            <div><input id="f2" type="range" min="0" max="100"><label>f2</label></div>
+            <div><input id="f3" type="range" min="0" max="100"><label>f3</label></div>
+            <div><input id="f4" type="range" min="0" max="100"><label>f4</label></div>
+
+            <div><input id="p1" type="range" min="0" max="628"><label>p1</label></div>
+            <div><input id="p2" type="range" min="0" max="628"><label>p2</label></div>
+            <div><input id="p3" type="range" min="0" max="628"><label>p3</label></div>
+            <div><input id="p4" type="range" min="0" max="628"><label>p4</label></div>
+
+            <div><input id="d1" type="range" min="0" max="10000"><label>d1</label></div>
+            <div><input id="d2" type="range" min="0" max="10000"><label>d2</label></div>
+            <div><input id="d3" type="range" min="0" max="10000"><label>d3</label></div>
+            <div><input id="d4" type="range" min="0" max="10000"><label>d4</label></div>
+
+
+            <div>
+                <button onclick="start()">Apply</button>
+                <button onclick="running = false">Stop</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>
